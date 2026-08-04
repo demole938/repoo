@@ -75,4 +75,9 @@ export default function Preloader({ onReady }: PreloaderProps) {
           style={{ width: `${percent}%` }}
         />
       </div>
-      <span className="font-mono
+      <span className="font-mono text-[10px] uppercase tracking-[0.15em] text-white/50">
+        Loading
+      </span>
+    </div>
+  )
+}
