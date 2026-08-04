@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 
-const VIDEO_URL = '/hero.mp4'
+const VIDEO_URL =
+  'https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260729_102822_0e6c87e8-c141-4744-bf32-ad30db296371.mp4'
 
 interface PreloaderProps {
   onReady: (videoObjectUrl: string) => void
@@ -74,9 +75,4 @@ export default function Preloader({ onReady }: PreloaderProps) {
           style={{ width: `${percent}%` }}
         />
       </div>
-      <span className="font-mono text-[10px] uppercase tracking-[0.15em] text-white/50">
-        Loading
-      </span>
-    </div>
-  )
-}
+      <span className="font-mono
